@@ -62,9 +62,9 @@ public class EncontrarOperacionesImplementacion implements EncontrarOperacionesI
                     int proxNumero = numeros.get(numeros_usados.get(i)+2);
 
                     if (operador.equals(Operadores.MULTI)){
-                        resultado *= numero * proxNumero;
+                        resultado = numero * proxNumero;
                     }else {
-                        resultado /= numero/proxNumero;
+                        resultado = numero/proxNumero;
                     }
                     i++;
                 }else {
