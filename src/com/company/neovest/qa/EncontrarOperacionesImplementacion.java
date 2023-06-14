@@ -10,6 +10,7 @@ public class EncontrarOperacionesImplementacion implements EncontrarOperacionesI
        ArrayList<StringBuilder> expresiones = new ArrayList<>();
 
        Backtracking(var1, var3, var2, var4, numeros_usados, operadoes_usados, expresiones);
+       System.out.println(expresiones);
        return null;
     }
 
@@ -33,7 +34,6 @@ public class EncontrarOperacionesImplementacion implements EncontrarOperacionesI
                         }
                     }
                 }
-                System.out.println(numeros_usados.toString());
                 numeros_usados.remove(numeros_usados.indexOf(i));
                 cantidad_numeros++;
             }
